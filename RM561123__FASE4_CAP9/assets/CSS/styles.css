@@ -1,0 +1,90 @@
+/* Configurações gerais */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante altura de 100% da tela */
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    font-family: Arial, sans-serif;
+    background: url('../Images/logo1.png') no-repeat center top;
+    background-size: contain; /* Ajusta a imagem para caber dentro da tela sem cortar */
+    background-attachment: fixed; /* A imagem de fundo ficará fixa enquanto a página rola */
+    background-color:#001a1e; /* Cor de fundo em caso de falha no carregamento da imagem */
+}
+
+/* Estilo para os textos no topo */
+header {
+    text-align: center;
+    margin-bottom: 150px; /* Distancia entre o conteudo de cima e as caixas de baixo */
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 15px; /* Distancia entre seja bem vindo e o controle do seu dinheiro */
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 100px;
+}
+
+/* Centralizando as caixas e o conteúdo */
+main {
+    display: flex;
+    flex-direction: column; /* Organiza as caixas verticalmente */
+    align-items: center; /* Centraliza as caixas horizontalmente */
+    justify-content: center; /* Centraliza as caixas verticalmente */
+    text-align: center; /* Centraliza o texto dentro das caixas */
+}
+
+/* Estilo para as caixas de diálogo */
+.dialog-box, .social-box {
+    background-color: white;
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+
+/* Estilo da dialog-box */
+.dialog-box {
+    color: #11BF25;
+    box-shadow: 0 -4px 10px rgba(17, 191, 37, 0.7); /* Sombra superior na cor do texto */
+}
+
+.dialog-box strong {
+    font-weight: bold;
+}
+
+/* Estilo para as caixas sociais */
+.social-box {
+    background-color: white;
+    width: 300px; /* Tamanho igual ao da caixa de diálogo */
+    padding: 15px;
+    margin-bottom: 15px; /* Distância entre as caixas */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usando flexbox para alinhar o ícone e o texto */
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+    font-size: 1rem;
+}
+
+/* Sombra superior nas caixas sociais */
+.social-box {
+    box-shadow: 0 -4px 10px rgba(13, 199, 247, 0.7); /* Sombra superior na cor do texto */
+}
+
+/* Estilo do ícone nas caixas sociais */
+.social-box .social-icon {
+    width: 20px; /* Ajuste a largura do ícone */
+    height: 20px; /* Ajuste a altura do ícone */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
